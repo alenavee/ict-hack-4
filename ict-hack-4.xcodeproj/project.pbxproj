@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E328381AAF00C31392 /* AppDelegate.swift */; };
+		A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E528381AAF00C31392 /* SceneDelegate.swift */; };
+		A68354E828381AAF00C31392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E728381AAF00C31392 /* ViewController.swift */; };
+		A68354ED28381AAF00C31392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68354EC28381AAF00C31392 /* Assets.xcassets */; };
+		A68354F028381AAF00C31392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */; };
+		A68354FA2838207C00C31392 /* BERTSQUADFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */; };
+		A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FB283836C600C31392 /* EnterPasswordViewController.swift */; };
+		A68354FE2838396200C31392 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FD2838396200C31392 /* AppColors.swift */; };
+		A683550028383A6E00C31392 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FF28383A6E00C31392 /* NumberPadView.swift */; };
+		A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A683550128383CF300C31392 /* UIButton+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A68354E028381AAF00C31392 /* ict-hack-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ict-hack-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68354E328381AAF00C31392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A68354E528381AAF00C31392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A68354E728381AAF00C31392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A68354EC28381AAF00C31392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A68354EF28381AAF00C31392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A68354F128381AAF00C31392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BERTSQUADFP16.mlmodel; sourceTree = "<group>"; };
+		A68354FB283836C600C31392 /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
+		A68354FD2838396200C31392 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		A68354FF28383A6E00C31392 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		A683550128383CF300C31392 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A68354DD28381AAF00C31392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A68354D728381AAF00C31392 = {
+			isa = PBXGroup;
+			children = (
+				A68354E228381AAF00C31392 /* ict-hack-4 */,
+				A68354E128381AAF00C31392 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A68354E128381AAF00C31392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A68354E028381AAF00C31392 /* ict-hack-4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A68354E228381AAF00C31392 /* ict-hack-4 */ = {
+			isa = PBXGroup;
+			children = (
+				A68354F82838205200C31392 /* MLModel */,
+				A68354F728381B4400C31392 /* Core */,
+				A68354E728381AAF00C31392 /* ViewController.swift */,
+				A68354FB283836C600C31392 /* EnterPasswordViewController.swift */,
+				A68354FF28383A6E00C31392 /* NumberPadView.swift */,
+				A683550128383CF300C31392 /* UIButton+Extension.swift */,
+				A68354FD2838396200C31392 /* AppColors.swift */,
+				A68354EC28381AAF00C31392 /* Assets.xcassets */,
+				A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */,
+			);
+			path = "ict-hack-4";
+			sourceTree = "<group>";
+		};
+		A68354F728381B4400C31392 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A68354E328381AAF00C31392 /* AppDelegate.swift */,
+				A68354E528381AAF00C31392 /* SceneDelegate.swift */,
+				A68354F128381AAF00C31392 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A68354F82838205200C31392 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */,
+			);
+			path = MLModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A68354DF28381AAF00C31392 /* ict-hack-4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A68354F428381AAF00C31392 /* Build configuration list for PBXNativeTarget "ict-hack-4" */;
+			buildPhases = (
+				A68354DC28381AAF00C31392 /* Sources */,
+				A68354DD28381AAF00C31392 /* Frameworks */,
+				A68354DE28381AAF00C31392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ict-hack-4";
+			productName = "ict-hack-4";
+			productReference = A68354E028381AAF00C31392 /* ict-hack-4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A68354D828381AAF00C31392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A68354DF28381AAF00C31392 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A68354DB28381AAF00C31392 /* Build configuration list for PBXProject "ict-hack-4" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A68354D728381AAF00C31392;
+			productRefGroup = A68354E128381AAF00C31392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A68354DF28381AAF00C31392 /* ict-hack-4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A68354DE28381AAF00C31392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68354F028381AAF00C31392 /* LaunchScreen.storyboard in Resources */,
+				A68354ED28381AAF00C31392 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A68354DC28381AAF00C31392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68354E828381AAF00C31392 /* ViewController.swift in Sources */,
+				A68354FA2838207C00C31392 /* BERTSQUADFP16.mlmodel in Sources */,
+				A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */,
+				A683550028383A6E00C31392 /* NumberPadView.swift in Sources */,
+				A68354FE2838396200C31392 /* AppColors.swift in Sources */,
+				A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */,
+				A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */,
+				A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68354EF28381AAF00C31392 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A68354F228381AAF00C31392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A68354F328381AAF00C31392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A68354F528381AAF00C31392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N36M22CA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ict-hack-4/Core/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matvei.bme.ict-hack-4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A68354F628381AAF00C31392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N36M22CA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ict-hack-4/Core/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matvei.bme.ict-hack-4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A68354DB28381AAF00C31392 /* Build configuration list for PBXProject "ict-hack-4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68354F228381AAF00C31392 /* Debug */,
+				A68354F328381AAF00C31392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A68354F428381AAF00C31392 /* Build configuration list for PBXNativeTarget "ict-hack-4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68354F528381AAF00C31392 /* Debug */,
+				A68354F628381AAF00C31392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A68354D828381AAF00C31392 /* Project object */;
+}
