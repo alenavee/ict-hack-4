@@ -13,4 +13,8 @@ struct AppImageNames {
 	static let clear = "clear"
 	
 	static let lock = "lock"
+	
+	static let history = "history"
+	
+	static let create = "create"
 }
