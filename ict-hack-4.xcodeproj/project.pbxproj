@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5723F1D9693424B2C11B7750 /* Pods_ict_hack_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F87F5F8022CAD6A7DFCFCA /* Pods_ict_hack_4.framework */; };
+		A61F476928384D0800E5E74E /* AppImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476828384D0800E5E74E /* AppImageNames.swift */; };
+		A61F476C2838661C00E5E74E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476B2838661B00E5E74E /* Router.swift */; };
+		A61F476E2838663900E5E74E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476D2838663900E5E74E /* MainViewController.swift */; };
+		A61F47702838668B00E5E74E /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476F2838668B00E5E74E /* PinView.swift */; };
 		A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E328381AAF00C31392 /* AppDelegate.swift */; };
 		A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E528381AAF00C31392 /* SceneDelegate.swift */; };
 		A68354E828381AAF00C31392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E728381AAF00C31392 /* ViewController.swift */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		1BB4ABD5C25D1DBE927D1AD1 /* Pods-ict-hack-4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack-4.debug.xcconfig"; path = "Target Support Files/Pods-ict-hack-4/Pods-ict-hack-4.debug.xcconfig"; sourceTree = "<group>"; };
 		57F87F5F8022CAD6A7DFCFCA /* Pods_ict_hack_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ict_hack_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61F476828384D0800E5E74E /* AppImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageNames.swift; sourceTree = "<group>"; };
+		A61F476B2838661B00E5E74E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A61F476D2838663900E5E74E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A61F476F2838668B00E5E74E /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		A68354E028381AAF00C31392 /* ict-hack-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ict-hack-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68354E328381AAF00C31392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68354E528381AAF00C31392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +72,15 @@
 				1BB4ABD5C25D1DBE927D1AD1 /* Pods-ict-hack-4.debug.xcconfig */,
 				A990A7DB93C74C210AF9A76B /* Pods-ict-hack-4.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A61F476A283851A700E5E74E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A683550128383CF300C31392 /* UIButton+Extension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A68354D728381AAF00C31392 = {
@@ -93,11 +108,12 @@
 				A68354F728381B4400C31392 /* Core */,
 				A68354E728381AAF00C31392 /* ViewController.swift */,
 				A68354FB283836C600C31392 /* EnterPasswordViewController.swift */,
+				A61F476F2838668B00E5E74E /* PinView.swift */,
+				A61F476B2838661B00E5E74E /* Router.swift */,
+				A61F476D2838663900E5E74E /* MainViewController.swift */,
 				A68354FF28383A6E00C31392 /* NumberPadView.swift */,
-				A683550128383CF300C31392 /* UIButton+Extension.swift */,
-				A68354FD2838396200C31392 /* AppColors.swift */,
-				A68354EC28381AAF00C31392 /* Assets.xcassets */,
-				A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */,
+				A61F476A283851A700E5E74E /* Common */,
+				A683550328384C7D00C31392 /* Resources */,
 			);
 			path = "ict-hack-4";
 			sourceTree = "<group>";
@@ -118,6 +134,17 @@
 				A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */,
 			);
 			path = MLModel;
+			sourceTree = "<group>";
+		};
+		A683550328384C7D00C31392 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A68354FD2838396200C31392 /* AppColors.swift */,
+				A61F476828384D0800E5E74E /* AppImageNames.swift */,
+				A68354EC28381AAF00C31392 /* Assets.xcassets */,
+				A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +262,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68354E828381AAF00C31392 /* ViewController.swift in Sources */,
+				A61F476E2838663900E5E74E /* MainViewController.swift in Sources */,
+				A61F47702838668B00E5E74E /* PinView.swift in Sources */,
 				A68354FA2838207C00C31392 /* BERTSQUADFP16.mlmodel in Sources */,
+				A61F476C2838661C00E5E74E /* Router.swift in Sources */,
 				A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */,
 				A683550028383A6E00C31392 /* NumberPadView.swift in Sources */,
 				A68354FE2838396200C31392 /* AppColors.swift in Sources */,
 				A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */,
+				A61F476928384D0800E5E74E /* AppImageNames.swift in Sources */,
 				A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */,
 				A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */,
 			);
