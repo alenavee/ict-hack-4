@@ -7,12 +7,24 @@
 
 import UIKit
 import PureLayout
+import LocalAuthentication
 
 class EnterPasswordViewController: UIViewController {
 	
 	private var pin = ""
 	
 	private let pinView = PinView()
+	
+	private let router: Router
+	
+	init(router: Router) {
+		self.router = router
+		super.init(nibName: nil, bundle: nil)
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -42,6 +54,10 @@ extension EnterPasswordViewController: NumberPadViewDelegate {
 			pin += "\(number)"
 			pinView.updatePin(pin)
 		}
+		
+		if pin.count == 4 {
+			router.switchToMainScreen()
+		}
 	}
 	
 	func clearDidTap() {
@@ -52,6 +68,29 @@ extension EnterPasswordViewController: NumberPadViewDelegate {
 	}
 	
 	func authDidTap() {
+		let authContext = LAContext()
+		var error: NSError?
 		
+		if authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+			let reason = "Авторизуйтесь для доступа к записям"
+			
+			authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self] success, authError in
+				if success {
+					DispatchQueue.main.async {
+						self?.router.switchToMainScreen()
+					}
+				} else {
+					DispatchQueue.main.async {
+						let ac = UIAlertController(title: "Не удалось выполнить вход", message: "Попробуйте ещё раз", preferredStyle: .alert)
+						ac.addAction(UIAlertAction(title: "OK", style: .default))
+						self?.present(ac, animated: true)
+					}
+				}
+			}
+		} else {
+			let ac = UIAlertController(title: "Биометрия не доступна", message: "Используйте пароль", preferredStyle: .alert)
+			ac.addAction(UIAlertAction(title: "OK", style: .default))
+			self.present(ac, animated: true)
+		}
 	}
 }
