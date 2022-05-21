@@ -12,6 +12,9 @@
 		A61F476C2838661C00E5E74E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476B2838661B00E5E74E /* Router.swift */; };
 		A61F476E2838663900E5E74E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476D2838663900E5E74E /* MainViewController.swift */; };
 		A61F47702838668B00E5E74E /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F476F2838668B00E5E74E /* PinView.swift */; };
+		A61F477328390E1D00E5E74E /* NewDiaryEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */; };
+		A61F477528390E3D00E5E74E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477428390E3D00E5E74E /* HistoryViewController.swift */; };
+		A61F4779283912C200E5E74E /* NewNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */; };
 		A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E328381AAF00C31392 /* AppDelegate.swift */; };
 		A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E528381AAF00C31392 /* SceneDelegate.swift */; };
 		A68354E828381AAF00C31392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E728381AAF00C31392 /* ViewController.swift */; };
@@ -31,6 +34,9 @@
 		A61F476B2838661B00E5E74E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A61F476D2838663900E5E74E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A61F476F2838668B00E5E74E /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryEntryViewController.swift; sourceTree = "<group>"; };
+		A61F477428390E3D00E5E74E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteTableViewCell.swift; sourceTree = "<group>"; };
 		A68354E028381AAF00C31392 /* ict-hack-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ict-hack-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68354E328381AAF00C31392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68354E528381AAF00C31392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +99,23 @@
 			path = PinCodeScreen;
 			sourceTree = "<group>";
 		};
+		A61F477628390E9400E5E74E /* DiaryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */,
+				A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */,
+			);
+			path = DiaryScreen;
+			sourceTree = "<group>";
+		};
+		A61F477728390EAA00E5E74E /* HistoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A61F477428390E3D00E5E74E /* HistoryViewController.swift */,
+			);
+			path = HistoryScreen;
+			sourceTree = "<group>";
+		};
 		A68354D728381AAF00C31392 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +137,14 @@
 		A68354E228381AAF00C31392 /* ict-hack-4 */ = {
 			isa = PBXGroup;
 			children = (
-				A61F477128390D2600E5E74E /* PinCodeScreen */,
 				A68354F82838205200C31392 /* MLModel */,
 				A68354F728381B4400C31392 /* Core */,
 				A68354E728381AAF00C31392 /* ViewController.swift */,
 				A61F476B2838661B00E5E74E /* Router.swift */,
 				A61F476D2838663900E5E74E /* MainViewController.swift */,
+				A61F477628390E9400E5E74E /* DiaryScreen */,
+				A61F477728390EAA00E5E74E /* HistoryScreen */,
+				A61F477128390D2600E5E74E /* PinCodeScreen */,
 				A61F476A283851A700E5E74E /* Common */,
 				A683550328384C7D00C31392 /* Resources */,
 			);
@@ -269,10 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61F4779283912C200E5E74E /* NewNoteTableViewCell.swift in Sources */,
+				A61F477328390E1D00E5E74E /* NewDiaryEntryViewController.swift in Sources */,
 				A68354E828381AAF00C31392 /* ViewController.swift in Sources */,
 				A61F476E2838663900E5E74E /* MainViewController.swift in Sources */,
 				A61F47702838668B00E5E74E /* PinView.swift in Sources */,
 				A68354FA2838207C00C31392 /* BERTSQUADFP16.mlmodel in Sources */,
+				A61F477528390E3D00E5E74E /* HistoryViewController.swift in Sources */,
 				A61F476C2838661C00E5E74E /* Router.swift in Sources */,
 				A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */,
 				A683550028383A6E00C31392 /* NumberPadView.swift in Sources */,

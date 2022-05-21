@@ -24,9 +24,7 @@ class MainViewController: UITabBarController {
 	}
 	
 	private func configureViewControllers() {
-		let first = UIViewController()
-		first.view.backgroundColor = .yellow
-		let tabOne = UINavigationController(rootViewController: first)
+		let tabOne = UINavigationController(rootViewController: NewDiaryEntryViewController())
 		let tabOneBarItem = UITabBarItem(title: "Новая запись", image: UIImage(named: AppImageNames.create), tag: 0)
 		tabOne.tabBarItem = tabOneBarItem
 		
