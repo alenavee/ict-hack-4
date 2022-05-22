@@ -7,32 +7,35 @@
 
 import Foundation
 
-struct Note {
+struct Note: Codable {
+	var type = "note"
 	var text: String
 	var isEditable: Bool
 }
 
-struct PsychologicalAdvice {
+struct PsychologicalAdvice: Codable {
+	var type = "psychologicalAdvice"
 	let text: String
 }
 
-enum Rate {
+enum Rate: Codable {
 	case good
 	case bad
 	case normal
 	case notRated
 }
 
-struct AdviceRate {
+struct AdviceRate: Codable {
+	var type = "adviceRate"
 	var rate: Rate
 }
 
-struct helpСenterRecommendation {
-//	let centerName: String
-//	let centerPhone: String
+struct HelpСenterRecommendation: Codable {
+	var type = "helpСenterRecommendation"
 }
 
-struct PositiveAdvice {
+struct PositiveAdvice: Codable {
+	var type = "positiveAdvice"
 	let text: String
 	let date: Date
 }

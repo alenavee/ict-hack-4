@@ -57,6 +57,10 @@
 		A6B16AAC2839E27A00E4FDFA /* CircleColorSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */; };
 		A6B16AAD2839E27A00E4FDFA /* ImageSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A812839E27900E4FDFA /* ImageSparkView.swift */; };
 		A6B16AB1283A39E000E4FDFA /* model-opt.ptl in Resources */ = {isa = PBXBuildFile; fileRef = A6B16AB0283A39E000E4FDFA /* model-opt.ptl */; };
+		A6B16AB3283A3EC200E4FDFA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16AB2283A3EC200E4FDFA /* Storage.swift */; };
+		A6B16AB5283A4B9600E4FDFA /* Vectorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16AB4283A4B9600E4FDFA /* Vectorization.swift */; };
+		A6B16AB7283A4C4500E4FDFA /* advices-data.json in Resources */ = {isa = PBXBuildFile; fileRef = A6B16AB6283A4C4500E4FDFA /* advices-data.json */; };
+		A6B16AB9283A5E8A00E4FDFA /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16AB8283A5E8A00E4FDFA /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +119,10 @@
 		A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleColorSparkView.swift; sourceTree = "<group>"; };
 		A6B16A812839E27900E4FDFA /* ImageSparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSparkView.swift; sourceTree = "<group>"; };
 		A6B16AB0283A39E000E4FDFA /* model-opt.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model-opt.ptl"; sourceTree = "<group>"; };
+		A6B16AB2283A3EC200E4FDFA /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A6B16AB4283A4B9600E4FDFA /* Vectorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vectorization.swift; sourceTree = "<group>"; };
+		A6B16AB6283A4C4500E4FDFA /* advices-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "advices-data.json"; sourceTree = "<group>"; };
+		A6B16AB8283A5E8A00E4FDFA /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		A990A7DB93C74C210AF9A76B /* Pods-ict-hack-4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack-4.release.xcconfig"; path = "Target Support Files/Pods-ict-hack-4/Pods-ict-hack-4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				A61F477428390E3D00E5E74E /* HistoryViewController.swift */,
+				A6B16AB8283A5E8A00E4FDFA /* HistoryTableViewCell.swift */,
+				A6B16AB2283A3EC200E4FDFA /* Storage.swift */,
 			);
 			path = HistoryScreen;
 			sourceTree = "<group>";
@@ -249,9 +259,11 @@
 				A61F47892839700700E5E74E /* TorchBridge */,
 				A61F47802839622C00E5E74E /* vocab.txt */,
 				A6B16AB0283A39E000E4FDFA /* model-opt.ptl */,
+				A6B16AB6283A4C4500E4FDFA /* advices-data.json */,
 				A61F47832839663A00E5E74E /* Tokenizer.swift */,
 				A61F47852839668D00E5E74E /* Utils.swift */,
 				A61F478728396DE500E5E74E /* PredictionModel.swift */,
+				A6B16AB4283A4B9600E4FDFA /* Vectorization.swift */,
 			);
 			path = MLModel;
 			sourceTree = "<group>";
@@ -401,6 +413,7 @@
 				A61F47812839622C00E5E74E /* vocab.txt in Resources */,
 				A68354F028381AAF00C31392 /* LaunchScreen.storyboard in Resources */,
 				A68354ED28381AAF00C31392 /* Assets.xcassets in Resources */,
+				A6B16AB7283A4C4500E4FDFA /* advices-data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +468,7 @@
 			files = (
 				A61F4779283912C200E5E74E /* NewNoteTableViewCell.swift in Sources */,
 				A6B16A8D2839E27900E4FDFA /* FireworkSpark.swift in Sources */,
+				A6B16AB5283A4B9600E4FDFA /* Vectorization.swift in Sources */,
 				A6B16A932839E27900E4FDFA /* CGPoint+Extensions.swift in Sources */,
 				A6B1697E2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift in Sources */,
 				A61F477328390E1D00E5E74E /* NewDiaryEntryViewController.swift in Sources */,
@@ -468,6 +482,7 @@
 				A61F47842839663A00E5E74E /* Tokenizer.swift in Sources */,
 				A6B16A8A2839E27900E4FDFA /* SparkViewAnimator.swift in Sources */,
 				A61F476C2838661C00E5E74E /* Router.swift in Sources */,
+				A6B16AB3283A3EC200E4FDFA /* Storage.swift in Sources */,
 				A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */,
 				A61F478828396DE500E5E74E /* PredictionModel.swift in Sources */,
 				A6B16A862839E27900E4FDFA /* SparkTrajectory.swift in Sources */,
@@ -493,6 +508,7 @@
 				A6B16A8E2839E27900E4FDFA /* ClassicSparkTrajectoryFactoryProtocol.swift in Sources */,
 				A6B16A902839E27900E4FDFA /* ClassicSparkTrajectoryFactory.swift in Sources */,
 				A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */,
+				A6B16AB9283A5E8A00E4FDFA /* HistoryTableViewCell.swift in Sources */,
 				A61F47862839668D00E5E74E /* Utils.swift in Sources */,
 				A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */,
 				A6B16A832839E27900E4FDFA /* FountainFireworkAnimator.swift in Sources */,

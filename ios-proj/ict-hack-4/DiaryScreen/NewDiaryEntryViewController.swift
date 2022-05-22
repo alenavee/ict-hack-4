@@ -8,14 +8,15 @@
 import UIKit
 
 class NewDiaryEntryViewController: UIViewController {
-//	var data: [Any] = [Note(text: "", isEditable: true), PsychologicalAdvice(text: "fdjvnkdf"), AdviceRate(rate: .notRated), helpСenterRecommendation(), PositiveAdvice(text: "", date: Date())]
-	var data: [Any] = [Note(text: "", isEditable: true)]
+	var data: [Content] = [Content.note(Note(text: "", isEditable: true))]
 	
 	private let table = UITableView()
 	
 	private let fireworksController = FountainFireworkController()
 	
 	private let predictionModel = PredictionModel()
+	
+	private let storage = Storage.shared
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -45,25 +46,33 @@ class NewDiaryEntryViewController: UIViewController {
 		table.register(PositiveAdviceTableViewCell.self, forCellReuseIdentifier: String(describing: PositiveAdviceTableViewCell.self))
 	}
 	
-	private func addNewContentBlock(for textTopics: [NoteTopic]) {
-		let maxValue = textTopics.max(by: { $0.value > $1.value })
+	private func addNewContentBlock(for textTopics: [NoteTopic], text: String) {
+		let maxValue = textTopics.max(by: { $0.value < $1.value })
 		guard let maxValue = maxValue else {
 			return
 		}
+		let advice = Vectorization.shared.findNearestAdvice(text)
+//		let advice = AdviceTextObject(empty: 0, questionText: "", answerShort: "Хуета", id: 0)
 		switch maxValue.topic {
 		case .suicide:
-			data.append(PsychologicalAdvice(text: "Ну типа тут совет для суицидальных"))
-			data.append(helpСenterRecommendation())
+			data.append(Content.psychologicalAdvice(PsychologicalAdvice(text: advice.answerShort)))
+			data.append(Content.helpСenterRecommendation(HelpСenterRecommendation()))
 		case .anxiety:
-			data.append(PsychologicalAdvice(text: "Ну типа тут совет для тревожных"))
-			data.append(AdviceRate(rate: .notRated))
+			data.append(Content.psychologicalAdvice(PsychologicalAdvice(text: advice.answerShort)))
+			data.append(Content.adviceRate(AdviceRate(rate: .notRated)))
 		case .depression:
-			data.append(PsychologicalAdvice(text: "Ну типа тут совет для депрессивных"))
-			data.append(AdviceRate(rate: .notRated))
+			data.append(Content.psychologicalAdvice(PsychologicalAdvice(text: advice.answerShort)))
+			data.append(Content.adviceRate(AdviceRate(rate: .notRated)))
 		case .positive:
-			data.append(PositiveAdvice(text: "", date: Date()))
+			makeFireworks()
+			data.append(Content.positiveAdvice(PositiveAdvice(text: "", date: Date())))
 		}
 		table.reloadData()
+		
+		DispatchQueue.global().async { [weak self] in
+			guard let self = self else { return }
+			self.storage.addNewRecord(Record(date: Date(), blocks: self.data))
+		}
 	}
 	
 	private func updateTable() {
@@ -71,6 +80,10 @@ class NewDiaryEntryViewController: UIViewController {
 			table?.beginUpdates()
 			table?.endUpdates()
 		}
+	}
+	
+	func reloadData() {
+		table.reloadData()
 	}
 	
 	private func makeFireworks() {
@@ -87,44 +100,38 @@ extension NewDiaryEntryViewController: UITableViewDataSource {
 		
 		let rawData = data[indexPath.item]
 		
-		if let dataModel = rawData as? Note {
+		switch rawData {
+		case .note(let dataModel):
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: NewNoteTableViewCell.self), for: indexPath) as? NewNoteTableViewCell else {
 				return UITableViewCell()
 			}
 			cell.delegate = self
 			cell.configure(with: dataModel)
 			return cell
-			
-		} else if let dataModel = rawData as? PsychologicalAdvice {
+		case .psychologicalAdvice(let dataModel):
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AdviceTableViewCell.self), for: indexPath) as? AdviceTableViewCell else {
 				return UITableViewCell()
 			}
 			cell.configure(with: dataModel)
 			return cell
-			
-		} else if let dataModel = rawData as? AdviceRate {
+		case .adviceRate(let dataModel):
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AdviceRateTableViewCell.self), for: indexPath) as? AdviceRateTableViewCell else {
 				return UITableViewCell()
 			}
 			cell.delegate = self
 			cell.configure(with: dataModel)
 			return cell
-			
-		} else if rawData is helpСenterRecommendation {
+		case .helpСenterRecommendation(_):
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HelpСenterCallTableViewCell.self), for: indexPath) as? HelpСenterCallTableViewCell else {
 				return UITableViewCell()
 			}
 			return cell
-			
-		} else if let dataModel = rawData as? PositiveAdvice {
+		case .positiveAdvice(let dataModel):
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PositiveAdviceTableViewCell.self), for: indexPath) as? PositiveAdviceTableViewCell else {
 				return UITableViewCell()
 			}
 			cell.configure(with: dataModel)
 			return cell
-			
-		} else {
-			return UITableViewCell()
 		}
 	}
 }
@@ -136,13 +143,16 @@ extension NewDiaryEntryViewController: NewNoteTableViewCellDelegate {
 			guard let self = self else {
 				return
 			}
-			if var note = self.data[0] as? Note {
+			let noteData = self.data[0]
+			switch noteData {
+			case .note(var note):
 				note.text = text
 				note.isEditable = false
-				self.data[0] = note
+				self.data[0] = Content.note(note)
 				self.table.reloadRows(at: [IndexPath(item: 0, section: 0)], with: .none)
+			default: break
 			}
-			self.addNewContentBlock(for: textTopics)
+			self.addNewContentBlock(for: textTopics, text: text)
 			self.updateTable()
 			print(textTopics)
 		}
@@ -156,11 +166,12 @@ extension NewDiaryEntryViewController: NewNoteTableViewCellDelegate {
 extension NewDiaryEntryViewController: AdviceRateTableViewCellDelegate {
 	func adviceFeedback(with rate: Rate) {
 		for (index, dataModel) in data.enumerated() {
-			if var rateBlock = dataModel as? AdviceRate {
-				rateBlock.rate = rate
-				data[index] = rateBlock
+			switch dataModel {
+			case .adviceRate(var advice):
+				advice.rate = rate
+				self.data[index] = Content.adviceRate(advice)
 				self.table.reloadRows(at: [IndexPath(item: index, section: 0)], with: .none)
-//				updateTable()
+			default: break
 			}
 		}
 	}

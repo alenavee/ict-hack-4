@@ -67,6 +67,16 @@ class BertTokenizer {
 		return vocab[token]!
 	}
 	
+	func pseudoTokenizeText(_ text: String) -> [Double] {
+		let tokens = tokenizeToIds(text: text)
+		var ids = Array(repeating: 0.0, count: 512)
+		for (index, token) in zip(0..<512, tokens) {
+			ids[index] = Double(token)
+		}
+		
+		return ids
+	}
+	
 	func tokenizeText(_ text: String) -> ([Int], [Int]) {
 		var tokens = tokenizeToIds(text: text)
 		tokens.insert(tokenToId(token: "[CLS]"), at: 0)
