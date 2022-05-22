@@ -15,16 +15,25 @@
 		A61F477328390E1D00E5E74E /* NewDiaryEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */; };
 		A61F477528390E3D00E5E74E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477428390E3D00E5E74E /* HistoryViewController.swift */; };
 		A61F4779283912C200E5E74E /* NewNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */; };
+		A61F477B2839373E00E5E74E /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477A2839373E00E5E74E /* DataModels.swift */; };
+		A61F477D2839412E00E5E74E /* AdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477C2839412E00E5E74E /* AdviceTableViewCell.swift */; };
+		A61F477F283950F400E5E74E /* AdviceRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F477E283950F400E5E74E /* AdviceRateTableViewCell.swift */; };
+		A61F47812839622C00E5E74E /* vocab.txt in Resources */ = {isa = PBXBuildFile; fileRef = A61F47802839622C00E5E74E /* vocab.txt */; };
+		A61F47842839663A00E5E74E /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F47832839663A00E5E74E /* Tokenizer.swift */; };
+		A61F47862839668D00E5E74E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F47852839668D00E5E74E /* Utils.swift */; };
+		A61F478828396DE500E5E74E /* PredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F478728396DE500E5E74E /* PredictionModel.swift */; };
+		A61F478D2839701E00E5E74E /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = A61F478C2839701E00E5E74E /* TorchModule.mm */; };
+		A61F47902839984800E5E74E /* model-opt.ptl in Resources */ = {isa = PBXBuildFile; fileRef = A61F478F2839984800E5E74E /* model-opt.ptl */; };
 		A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E328381AAF00C31392 /* AppDelegate.swift */; };
 		A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E528381AAF00C31392 /* SceneDelegate.swift */; };
 		A68354E828381AAF00C31392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E728381AAF00C31392 /* ViewController.swift */; };
 		A68354ED28381AAF00C31392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68354EC28381AAF00C31392 /* Assets.xcassets */; };
 		A68354F028381AAF00C31392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */; };
-		A68354FA2838207C00C31392 /* BERTSQUADFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */; };
 		A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FB283836C600C31392 /* EnterPasswordViewController.swift */; };
 		A68354FE2838396200C31392 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FD2838396200C31392 /* AppColors.swift */; };
 		A683550028383A6E00C31392 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FF28383A6E00C31392 /* NumberPadView.swift */; };
 		A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A683550128383CF300C31392 /* UIButton+Extension.swift */; };
+		A6B1697E2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,17 @@
 		A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryEntryViewController.swift; sourceTree = "<group>"; };
 		A61F477428390E3D00E5E74E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteTableViewCell.swift; sourceTree = "<group>"; };
+		A61F477A2839373E00E5E74E /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		A61F477C2839412E00E5E74E /* AdviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceTableViewCell.swift; sourceTree = "<group>"; };
+		A61F477E283950F400E5E74E /* AdviceRateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceRateTableViewCell.swift; sourceTree = "<group>"; };
+		A61F47802839622C00E5E74E /* vocab.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocab.txt; sourceTree = "<group>"; };
+		A61F47832839663A00E5E74E /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		A61F47852839668D00E5E74E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A61F478728396DE500E5E74E /* PredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionModel.swift; sourceTree = "<group>"; };
+		A61F478A2839701100E5E74E /* TorchModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
+		A61F478B2839701E00E5E74E /* ict-hack-4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ict-hack-4-Bridging-Header.h"; sourceTree = "<group>"; };
+		A61F478C2839701E00E5E74E /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		A61F478F2839984800E5E74E /* model-opt.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model-opt.ptl"; sourceTree = "<group>"; };
 		A68354E028381AAF00C31392 /* ict-hack-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ict-hack-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68354E328381AAF00C31392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68354E528381AAF00C31392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +64,11 @@
 		A68354EC28381AAF00C31392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68354EF28381AAF00C31392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68354F128381AAF00C31392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BERTSQUADFP16.mlmodel; sourceTree = "<group>"; };
 		A68354FB283836C600C31392 /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
 		A68354FD2838396200C31392 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		A68354FF28383A6E00C31392 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
 		A683550128383CF300C31392 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelpСenterCallTableViewCell.swift"; sourceTree = "<group>"; };
 		A990A7DB93C74C210AF9A76B /* Pods-ict-hack-4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack-4.release.xcconfig"; path = "Target Support Files/Pods-ict-hack-4/Pods-ict-hack-4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */,
+				A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */,
 				A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */,
+				A61F477C2839412E00E5E74E /* AdviceTableViewCell.swift */,
+				A61F477E283950F400E5E74E /* AdviceRateTableViewCell.swift */,
 			);
 			path = DiaryScreen;
 			sourceTree = "<group>";
@@ -114,6 +137,16 @@
 				A61F477428390E3D00E5E74E /* HistoryViewController.swift */,
 			);
 			path = HistoryScreen;
+			sourceTree = "<group>";
+		};
+		A61F47892839700700E5E74E /* TorchBridge */ = {
+			isa = PBXGroup;
+			children = (
+				A61F478A2839701100E5E74E /* TorchModule.h */,
+				A61F478C2839701E00E5E74E /* TorchModule.mm */,
+				A61F478B2839701E00E5E74E /* ict-hack-4-Bridging-Header.h */,
+			);
+			path = TorchBridge;
 			sourceTree = "<group>";
 		};
 		A68354D728381AAF00C31392 = {
@@ -142,6 +175,7 @@
 				A68354E728381AAF00C31392 /* ViewController.swift */,
 				A61F476B2838661B00E5E74E /* Router.swift */,
 				A61F476D2838663900E5E74E /* MainViewController.swift */,
+				A61F477A2839373E00E5E74E /* DataModels.swift */,
 				A61F477628390E9400E5E74E /* DiaryScreen */,
 				A61F477728390EAA00E5E74E /* HistoryScreen */,
 				A61F477128390D2600E5E74E /* PinCodeScreen */,
@@ -164,7 +198,12 @@
 		A68354F82838205200C31392 /* MLModel */ = {
 			isa = PBXGroup;
 			children = (
-				A68354F92838207C00C31392 /* BERTSQUADFP16.mlmodel */,
+				A61F47892839700700E5E74E /* TorchBridge */,
+				A61F47802839622C00E5E74E /* vocab.txt */,
+				A61F478F2839984800E5E74E /* model-opt.ptl */,
+				A61F47832839663A00E5E74E /* Tokenizer.swift */,
+				A61F47852839668D00E5E74E /* Utils.swift */,
+				A61F478728396DE500E5E74E /* PredictionModel.swift */,
 			);
 			path = MLModel;
 			sourceTree = "<group>";
@@ -214,6 +253,7 @@
 				TargetAttributes = {
 					A68354DF28381AAF00C31392 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -240,6 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61F47902839984800E5E74E /* model-opt.ptl in Resources */,
+				A61F47812839622C00E5E74E /* vocab.txt in Resources */,
 				A68354F028381AAF00C31392 /* LaunchScreen.storyboard in Resources */,
 				A68354ED28381AAF00C31392 /* Assets.xcassets in Resources */,
 			);
@@ -295,19 +337,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61F4779283912C200E5E74E /* NewNoteTableViewCell.swift in Sources */,
+				A6B1697E2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift in Sources */,
 				A61F477328390E1D00E5E74E /* NewDiaryEntryViewController.swift in Sources */,
 				A68354E828381AAF00C31392 /* ViewController.swift in Sources */,
+				A61F477D2839412E00E5E74E /* AdviceTableViewCell.swift in Sources */,
 				A61F476E2838663900E5E74E /* MainViewController.swift in Sources */,
 				A61F47702838668B00E5E74E /* PinView.swift in Sources */,
-				A68354FA2838207C00C31392 /* BERTSQUADFP16.mlmodel in Sources */,
 				A61F477528390E3D00E5E74E /* HistoryViewController.swift in Sources */,
+				A61F47842839663A00E5E74E /* Tokenizer.swift in Sources */,
 				A61F476C2838661C00E5E74E /* Router.swift in Sources */,
 				A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */,
+				A61F478828396DE500E5E74E /* PredictionModel.swift in Sources */,
+				A61F477B2839373E00E5E74E /* DataModels.swift in Sources */,
+				A61F477F283950F400E5E74E /* AdviceRateTableViewCell.swift in Sources */,
 				A683550028383A6E00C31392 /* NumberPadView.swift in Sources */,
+				A61F478D2839701E00E5E74E /* TorchModule.mm in Sources */,
 				A68354FE2838396200C31392 /* AppColors.swift in Sources */,
 				A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */,
 				A61F476928384D0800E5E74E /* AppImageNames.swift in Sources */,
 				A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */,
+				A61F47862839668D00E5E74E /* Utils.swift in Sources */,
 				A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,9 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9N36M22CA6;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ict-hack-4/Core/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -463,6 +514,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matvei.bme.ict-hack-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ict-hack-4/MLModel/TorchBridge/ict-hack-4-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -474,9 +527,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9N36M22CA6;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ict-hack-4/Core/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -491,6 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matvei.bme.ict-hack-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ict-hack-4/MLModel/TorchBridge/ict-hack-4-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,16 +1,24 @@
 PODS:
+  - LibTorch-Lite (1.11.0):
+    - LibTorch-Lite/Core (= 1.11.0)
+  - LibTorch-Lite/Core (1.11.0):
+    - LibTorch-Lite/Torch
+  - LibTorch-Lite/Torch (1.11.0)
   - PureLayout (3.1.9)
 
 DEPENDENCIES:
+  - LibTorch-Lite
   - PureLayout
 
 SPEC REPOS:
   trunk:
+    - LibTorch-Lite
     - PureLayout
 
 SPEC CHECKSUMS:
+  LibTorch-Lite: 14eb78f01cb0c9b5caaaf98c05c3faa1810cbca5
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
 
-PODFILE CHECKSUM: 0db8a366725305ec75d960afc4d634b4e2f22df6
+PODFILE CHECKSUM: 8182578f0dfd3f482a5cc54295b498cfbf510762
 
 COCOAPODS: 1.11.3

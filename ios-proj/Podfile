@@ -7,5 +7,6 @@ target 'ict-hack-4' do
 
   # Pods for ict-hack-4
 pod 'PureLayout'
+pod 'LibTorch-Lite'
 
 end
