@@ -35,6 +35,28 @@
 		A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A683550128383CF300C31392 /* UIButton+Extension.swift */; };
 		A6B1697E2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */; };
 		A6B169802839C05100E4FDFA /* PositiveAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1697F2839C05100E4FDFA /* PositiveAdviceTableViewCell.swift */; };
+		A6B16A822839E27900E4FDFA /* FountainFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A4C2839E27900E4FDFA /* FountainFirework.swift */; };
+		A6B16A832839E27900E4FDFA /* FountainFireworkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A4D2839E27900E4FDFA /* FountainFireworkAnimator.swift */; };
+		A6B16A842839E27900E4FDFA /* FountainFireworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A4E2839E27900E4FDFA /* FountainFireworkController.swift */; };
+		A6B16A852839E27900E4FDFA /* FountainSparkTrajectoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A4F2839E27900E4FDFA /* FountainSparkTrajectoryFactory.swift */; };
+		A6B16A862839E27900E4FDFA /* SparkTrajectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A512839E27900E4FDFA /* SparkTrajectory.swift */; };
+		A6B16A872839E27900E4FDFA /* SparkTrajectoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A522839E27900E4FDFA /* SparkTrajectoryFactory.swift */; };
+		A6B16A882839E27900E4FDFA /* FireworkSparkScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A532839E27900E4FDFA /* FireworkSparkScheduler.swift */; };
+		A6B16A892839E27900E4FDFA /* Firework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A542839E27900E4FDFA /* Firework.swift */; };
+		A6B16A8A2839E27900E4FDFA /* SparkViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A552839E27900E4FDFA /* SparkViewAnimator.swift */; };
+		A6B16A8B2839E27900E4FDFA /* SparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A562839E27900E4FDFA /* SparkView.swift */; };
+		A6B16A8C2839E27900E4FDFA /* SparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A572839E27900E4FDFA /* SparkViewFactory.swift */; };
+		A6B16A8D2839E27900E4FDFA /* FireworkSpark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A582839E27900E4FDFA /* FireworkSpark.swift */; };
+		A6B16A8E2839E27900E4FDFA /* ClassicSparkTrajectoryFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A5A2839E27900E4FDFA /* ClassicSparkTrajectoryFactoryProtocol.swift */; };
+		A6B16A8F2839E27900E4FDFA /* ClassicFireworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A5B2839E27900E4FDFA /* ClassicFireworkController.swift */; };
+		A6B16A902839E27900E4FDFA /* ClassicSparkTrajectoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A5C2839E27900E4FDFA /* ClassicSparkTrajectoryFactory.swift */; };
+		A6B16A912839E27900E4FDFA /* ClassicFireworkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A5D2839E27900E4FDFA /* ClassicFireworkAnimator.swift */; };
+		A6B16A922839E27900E4FDFA /* ClassicFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A5E2839E27900E4FDFA /* ClassicFirework.swift */; };
+		A6B16A932839E27900E4FDFA /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A602839E27900E4FDFA /* CGPoint+Extensions.swift */; };
+		A6B16AAA2839E27900E4FDFA /* ImageSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A7E2839E27900E4FDFA /* ImageSparkViewFactory.swift */; };
+		A6B16AAB2839E27A00E4FDFA /* CircleColorSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A7F2839E27900E4FDFA /* CircleColorSparkViewFactory.swift */; };
+		A6B16AAC2839E27A00E4FDFA /* CircleColorSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */; };
+		A6B16AAD2839E27A00E4FDFA /* ImageSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A812839E27900E4FDFA /* ImageSparkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +93,28 @@
 		A683550128383CF300C31392 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelpСenterCallTableViewCell.swift"; sourceTree = "<group>"; };
 		A6B1697F2839C05100E4FDFA /* PositiveAdviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveAdviceTableViewCell.swift; sourceTree = "<group>"; };
+		A6B16A4C2839E27900E4FDFA /* FountainFirework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FountainFirework.swift; sourceTree = "<group>"; };
+		A6B16A4D2839E27900E4FDFA /* FountainFireworkAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FountainFireworkAnimator.swift; sourceTree = "<group>"; };
+		A6B16A4E2839E27900E4FDFA /* FountainFireworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FountainFireworkController.swift; sourceTree = "<group>"; };
+		A6B16A4F2839E27900E4FDFA /* FountainSparkTrajectoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FountainSparkTrajectoryFactory.swift; sourceTree = "<group>"; };
+		A6B16A512839E27900E4FDFA /* SparkTrajectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkTrajectory.swift; sourceTree = "<group>"; };
+		A6B16A522839E27900E4FDFA /* SparkTrajectoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkTrajectoryFactory.swift; sourceTree = "<group>"; };
+		A6B16A532839E27900E4FDFA /* FireworkSparkScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworkSparkScheduler.swift; sourceTree = "<group>"; };
+		A6B16A542839E27900E4FDFA /* Firework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firework.swift; sourceTree = "<group>"; };
+		A6B16A552839E27900E4FDFA /* SparkViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkViewAnimator.swift; sourceTree = "<group>"; };
+		A6B16A562839E27900E4FDFA /* SparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkView.swift; sourceTree = "<group>"; };
+		A6B16A572839E27900E4FDFA /* SparkViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkViewFactory.swift; sourceTree = "<group>"; };
+		A6B16A582839E27900E4FDFA /* FireworkSpark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworkSpark.swift; sourceTree = "<group>"; };
+		A6B16A5A2839E27900E4FDFA /* ClassicSparkTrajectoryFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicSparkTrajectoryFactoryProtocol.swift; sourceTree = "<group>"; };
+		A6B16A5B2839E27900E4FDFA /* ClassicFireworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicFireworkController.swift; sourceTree = "<group>"; };
+		A6B16A5C2839E27900E4FDFA /* ClassicSparkTrajectoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicSparkTrajectoryFactory.swift; sourceTree = "<group>"; };
+		A6B16A5D2839E27900E4FDFA /* ClassicFireworkAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicFireworkAnimator.swift; sourceTree = "<group>"; };
+		A6B16A5E2839E27900E4FDFA /* ClassicFirework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicFirework.swift; sourceTree = "<group>"; };
+		A6B16A602839E27900E4FDFA /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		A6B16A7E2839E27900E4FDFA /* ImageSparkViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSparkViewFactory.swift; sourceTree = "<group>"; };
+		A6B16A7F2839E27900E4FDFA /* CircleColorSparkViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleColorSparkViewFactory.swift; sourceTree = "<group>"; };
+		A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleColorSparkView.swift; sourceTree = "<group>"; };
+		A6B16A812839E27900E4FDFA /* ImageSparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSparkView.swift; sourceTree = "<group>"; };
 		A990A7DB93C74C210AF9A76B /* Pods-ict-hack-4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack-4.release.xcconfig"; path = "Target Support Files/Pods-ict-hack-4/Pods-ict-hack-4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +150,7 @@
 		A61F476A283851A700E5E74E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A6B16A4A2839E26100E4FDFA /* UIEffects */,
 				A683550128383CF300C31392 /* UIButton+Extension.swift */,
 			);
 			path = Common;
@@ -220,6 +265,75 @@
 				A68354EE28381AAF00C31392 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6B16A4A2839E26100E4FDFA /* UIEffects */ = {
+			isa = PBXGroup;
+			children = (
+				A6B16A592839E27900E4FDFA /* Classic Firework */,
+				A6B16A4B2839E27900E4FDFA /* Fountain Firework */,
+				A6B16A502839E27900E4FDFA /* Model */,
+				A6B16A7D2839E27900E4FDFA /* Spark Views */,
+				A6B16A5F2839E27900E4FDFA /* System Extensions */,
+			);
+			path = UIEffects;
+			sourceTree = "<group>";
+		};
+		A6B16A4B2839E27900E4FDFA /* Fountain Firework */ = {
+			isa = PBXGroup;
+			children = (
+				A6B16A4C2839E27900E4FDFA /* FountainFirework.swift */,
+				A6B16A4D2839E27900E4FDFA /* FountainFireworkAnimator.swift */,
+				A6B16A4E2839E27900E4FDFA /* FountainFireworkController.swift */,
+				A6B16A4F2839E27900E4FDFA /* FountainSparkTrajectoryFactory.swift */,
+			);
+			path = "Fountain Firework";
+			sourceTree = "<group>";
+		};
+		A6B16A502839E27900E4FDFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6B16A512839E27900E4FDFA /* SparkTrajectory.swift */,
+				A6B16A522839E27900E4FDFA /* SparkTrajectoryFactory.swift */,
+				A6B16A532839E27900E4FDFA /* FireworkSparkScheduler.swift */,
+				A6B16A542839E27900E4FDFA /* Firework.swift */,
+				A6B16A552839E27900E4FDFA /* SparkViewAnimator.swift */,
+				A6B16A562839E27900E4FDFA /* SparkView.swift */,
+				A6B16A572839E27900E4FDFA /* SparkViewFactory.swift */,
+				A6B16A582839E27900E4FDFA /* FireworkSpark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6B16A592839E27900E4FDFA /* Classic Firework */ = {
+			isa = PBXGroup;
+			children = (
+				A6B16A5A2839E27900E4FDFA /* ClassicSparkTrajectoryFactoryProtocol.swift */,
+				A6B16A5B2839E27900E4FDFA /* ClassicFireworkController.swift */,
+				A6B16A5C2839E27900E4FDFA /* ClassicSparkTrajectoryFactory.swift */,
+				A6B16A5D2839E27900E4FDFA /* ClassicFireworkAnimator.swift */,
+				A6B16A5E2839E27900E4FDFA /* ClassicFirework.swift */,
+			);
+			path = "Classic Firework";
+			sourceTree = "<group>";
+		};
+		A6B16A5F2839E27900E4FDFA /* System Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6B16A602839E27900E4FDFA /* CGPoint+Extensions.swift */,
+			);
+			path = "System Extensions";
+			sourceTree = "<group>";
+		};
+		A6B16A7D2839E27900E4FDFA /* Spark Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B16A7E2839E27900E4FDFA /* ImageSparkViewFactory.swift */,
+				A6B16A7F2839E27900E4FDFA /* CircleColorSparkViewFactory.swift */,
+				A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */,
+				A6B16A812839E27900E4FDFA /* ImageSparkView.swift */,
+			);
+			path = "Spark Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +454,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61F4779283912C200E5E74E /* NewNoteTableViewCell.swift in Sources */,
+				A6B16A8D2839E27900E4FDFA /* FireworkSpark.swift in Sources */,
+				A6B16A932839E27900E4FDFA /* CGPoint+Extensions.swift in Sources */,
 				A6B1697E2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift in Sources */,
 				A61F477328390E1D00E5E74E /* NewDiaryEntryViewController.swift in Sources */,
 				A68354E828381AAF00C31392 /* ViewController.swift in Sources */,
@@ -347,20 +463,40 @@
 				A61F476E2838663900E5E74E /* MainViewController.swift in Sources */,
 				A61F47702838668B00E5E74E /* PinView.swift in Sources */,
 				A61F477528390E3D00E5E74E /* HistoryViewController.swift in Sources */,
+				A6B16AAA2839E27900E4FDFA /* ImageSparkViewFactory.swift in Sources */,
+				A6B16A8F2839E27900E4FDFA /* ClassicFireworkController.swift in Sources */,
 				A61F47842839663A00E5E74E /* Tokenizer.swift in Sources */,
+				A6B16A8A2839E27900E4FDFA /* SparkViewAnimator.swift in Sources */,
 				A61F476C2838661C00E5E74E /* Router.swift in Sources */,
 				A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */,
 				A61F478828396DE500E5E74E /* PredictionModel.swift in Sources */,
+				A6B16A862839E27900E4FDFA /* SparkTrajectory.swift in Sources */,
+				A6B16A8B2839E27900E4FDFA /* SparkView.swift in Sources */,
 				A61F477B2839373E00E5E74E /* DataModels.swift in Sources */,
 				A61F477F283950F400E5E74E /* AdviceRateTableViewCell.swift in Sources */,
+				A6B16A822839E27900E4FDFA /* FountainFirework.swift in Sources */,
 				A683550028383A6E00C31392 /* NumberPadView.swift in Sources */,
+				A6B16A842839E27900E4FDFA /* FountainFireworkController.swift in Sources */,
+				A6B16AAC2839E27A00E4FDFA /* CircleColorSparkView.swift in Sources */,
+				A6B16A892839E27900E4FDFA /* Firework.swift in Sources */,
+				A6B16AAB2839E27A00E4FDFA /* CircleColorSparkViewFactory.swift in Sources */,
 				A61F478D2839701E00E5E74E /* TorchModule.mm in Sources */,
+				A6B16A912839E27900E4FDFA /* ClassicFireworkAnimator.swift in Sources */,
+				A6B16A852839E27900E4FDFA /* FountainSparkTrajectoryFactory.swift in Sources */,
+				A6B16A8C2839E27900E4FDFA /* SparkViewFactory.swift in Sources */,
+				A6B16A922839E27900E4FDFA /* ClassicFirework.swift in Sources */,
+				A6B16A882839E27900E4FDFA /* FireworkSparkScheduler.swift in Sources */,
 				A68354FE2838396200C31392 /* AppColors.swift in Sources */,
 				A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */,
 				A61F476928384D0800E5E74E /* AppImageNames.swift in Sources */,
+				A6B16A872839E27900E4FDFA /* SparkTrajectoryFactory.swift in Sources */,
+				A6B16A8E2839E27900E4FDFA /* ClassicSparkTrajectoryFactoryProtocol.swift in Sources */,
+				A6B16A902839E27900E4FDFA /* ClassicSparkTrajectoryFactory.swift in Sources */,
 				A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */,
 				A61F47862839668D00E5E74E /* Utils.swift in Sources */,
 				A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */,
+				A6B16A832839E27900E4FDFA /* FountainFireworkAnimator.swift in Sources */,
+				A6B16AAD2839E27A00E4FDFA /* ImageSparkView.swift in Sources */,
 				A6B169802839C05100E4FDFA /* PositiveAdviceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

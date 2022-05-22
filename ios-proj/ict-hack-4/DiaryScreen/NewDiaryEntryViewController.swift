@@ -8,9 +8,11 @@
 import UIKit
 
 class NewDiaryEntryViewController: UIViewController {
-	var data: [Any] = [Note(text: "", isEditable: true), PsychologicalAdvice(text: "fdjvnkdf"), AdviceRate(rate: .good), helpСenterRecommendation(), PositiveAdvice(text: "", date: Date())]
+	var data: [Any] = [Note(text: "", isEditable: true), PsychologicalAdvice(text: "fdjvnkdf"), AdviceRate(rate: .notRated), helpСenterRecommendation(), PositiveAdvice(text: "", date: Date())]
 	
 	private let table = UITableView()
+	
+	private let fireworksController = FountainFireworkController()
 	
 	private let predictionModel = PredictionModel()
 	
@@ -51,6 +53,10 @@ class NewDiaryEntryViewController: UIViewController {
 			table?.beginUpdates()
 			table?.endUpdates()
 		}
+	}
+	
+	private func makeFireworks() {
+		fireworksController.addFirework(sparks: 40, above: table, sparkSize: CGSize(width: 50, height: 50), scale: 300, offsetY: -table.frame.height, animationDuration: 3)
 	}
 }
 
@@ -107,7 +113,6 @@ extension NewDiaryEntryViewController: UITableViewDataSource {
 
 extension NewDiaryEntryViewController: NewNoteTableViewCellDelegate {
 	func addNote(with text: String, _ callback: @escaping () -> ()) {
-		
 		predictionModel.predict(for: text) { [weak self] textTopics in
 			callback()
 			guard let self = self else {
@@ -135,7 +140,9 @@ extension NewDiaryEntryViewController: AdviceRateTableViewCellDelegate {
 		for (index, dataModel) in data.enumerated() {
 			if var rateBlock = dataModel as? AdviceRate {
 				rateBlock.rate = rate
+				data[index] = rateBlock
 				self.table.reloadRows(at: [IndexPath(item: index, section: 0)], with: .none)
+//				updateTable()
 			}
 		}
 	}
