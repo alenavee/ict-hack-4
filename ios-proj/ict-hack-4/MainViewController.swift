@@ -28,9 +28,7 @@ class MainViewController: UITabBarController {
 		let tabOneBarItem = UITabBarItem(title: "Новая запись", image: UIImage(named: AppImageNames.create), tag: 0)
 		tabOne.tabBarItem = tabOneBarItem
 		
-		let second = UIViewController()
-		second.view.backgroundColor = .green
-		let tabTwo = UINavigationController(rootViewController: second)
+		let tabTwo = UINavigationController(rootViewController: HistoryViewController())
 		let tabTwoBarItem = UITabBarItem(title: "История", image: UIImage(named: AppImageNames.history), tag: 1)
 		tabTwo.tabBarItem = tabTwoBarItem
 		
