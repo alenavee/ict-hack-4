@@ -28,12 +28,13 @@ struct AdviceRate {
 }
 
 struct helpСenterRecommendation {
-	let centerName: String
-	let centerPhone: String
+//	let centerName: String
+//	let centerPhone: String
 }
 
 struct PositiveAdvice {
 	let text: String
+	let date: Date
 }
 
 enum Topics {

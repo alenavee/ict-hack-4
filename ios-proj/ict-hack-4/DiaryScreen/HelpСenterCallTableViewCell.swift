@@ -34,7 +34,7 @@ class HelpСenterCallTableViewCell: UITableViewCell {
 		let imageView = UIImageView(image: UIImage(named: AppImageNames.phone)?.withRenderingMode(.alwaysTemplate))
 		imageView.tintColor = AppColors.primaryColor
 		button.addSubview(imageView)
-		imageView.autoPinEdgesToSuperviewEdges()
+		imageView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
 		
 		return button
 	}()
@@ -64,7 +64,7 @@ class HelpСenterCallTableViewCell: UITableViewCell {
 		frameView.addSubview(phoneCallButton)
 		phoneCallButton.autoPinEdge(toSuperviewEdge: .right, withInset: 8)
 		phoneCallButton.autoAlignAxis(toSuperviewAxis: .horizontal)
-		text.autoPinEdge(.right, to: .left, of: phoneCallButton, withOffset: 12)
+		text.autoPinEdge(.right, to: .left, of: phoneCallButton, withOffset: -12)
 	}
 	
 	private func setupTextLabel() {

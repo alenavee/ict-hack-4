@@ -100,6 +100,7 @@ class NewNoteTableViewCell: UITableViewCell {
 	}
 	
 	@objc private func submitText(_ sender: UIButton) {
+		textView.resignFirstResponder()
 		guard let text = textView.text else { return }
 		buttonShowLoad()
 		delegate?.addNote(with: text) { [weak self] in
@@ -125,7 +126,6 @@ class NewNoteTableViewCell: UITableViewCell {
 
 extension NewNoteTableViewCell: UITextViewDelegate {
 	func textViewDidChange(_ textView: UITextView) {
-		textView.resignFirstResponder()
 		delegate?.textChanged()
 	}
 }

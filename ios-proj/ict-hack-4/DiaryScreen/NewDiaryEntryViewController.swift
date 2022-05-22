@@ -8,7 +8,8 @@
 import UIKit
 
 class NewDiaryEntryViewController: UIViewController {
-	let table = UITableView()
+	var data: [Any] = [Note(text: "", isEditable: true), PsychologicalAdvice(text: "fdjvnkdf"), AdviceRate(rate: .good), helpСenterRecommendation(), PositiveAdvice(text: "", date: Date())]
+	
 	private let table = UITableView()
 	
 	private let predictionModel = PredictionModel()
@@ -38,6 +39,7 @@ class NewDiaryEntryViewController: UIViewController {
 		table.register(AdviceTableViewCell.self, forCellReuseIdentifier: String(describing: AdviceTableViewCell.self))
 		table.register(AdviceRateTableViewCell.self, forCellReuseIdentifier: String(describing: AdviceRateTableViewCell.self))
 		table.register(HelpСenterCallTableViewCell.self, forCellReuseIdentifier: String(describing: HelpСenterCallTableViewCell.self))
+		table.register(PositiveAdviceTableViewCell.self, forCellReuseIdentifier: String(describing: PositiveAdviceTableViewCell.self))
 	}
 	
 	private func addNewContentBlock(for textTopics: [NoteTopic]) {
@@ -91,11 +93,15 @@ extension NewDiaryEntryViewController: UITableViewDataSource {
 			return cell
 			
 		} else if let dataModel = rawData as? PositiveAdvice {
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PositiveAdviceTableViewCell.self), for: indexPath) as? PositiveAdviceTableViewCell else {
+				return UITableViewCell()
+			}
+			cell.configure(with: dataModel)
+			return cell
 			
 		} else {
 			return UITableViewCell()
 		}
-		return UITableViewCell()
 	}
 }
 

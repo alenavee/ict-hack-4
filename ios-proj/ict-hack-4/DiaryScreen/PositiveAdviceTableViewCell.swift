@@ -9,15 +9,15 @@ import UIKit
 import PureLayout
 
 struct PositiveTexts {
-	static let morning = ""
+	static let morning = " Удивительный факт №38: сегодня утром проснулось два солнца. Первое - космическое тело, второе - ты ❤️ Хорошего дня!"
 	
-	static let day = ""
+	static let day = "Середина дня, Котик, бегом кушать, еда остывает! Приятного аппетита💋"
 	
-	static let evening = ""
+	static let evening = "Вкусного ужина, котик 💋"
 	
-	static let night = ""
+	static let night = "Котя💋 Мурчательных снов тебе, выспись хорошенько 💋"
 	
-	static let noTime = ""
+	static let noTime = "Котик! Мур ❤️"
 }
 
 class PositiveAdviceTableViewCell: UITableViewCell {
@@ -35,6 +35,7 @@ class PositiveAdviceTableViewCell: UITableViewCell {
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
+		setupView()
 	}
 	
 	required init?(coder: NSCoder) {
@@ -42,8 +43,10 @@ class PositiveAdviceTableViewCell: UITableViewCell {
 	}
 	
 	private func setupView() {
+		contentView.backgroundColor = AppColors.mainBackground
+		
 		let frameView = UIView()
-		frameView.backgroundColor = AppColors.mainBackground
+		frameView.backgroundColor = AppColors.primaryColor
 		frameView.layer.cornerRadius = 8
 		
 		contentView.addSubview(frameView)

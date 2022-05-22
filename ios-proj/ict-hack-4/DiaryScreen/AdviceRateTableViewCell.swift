@@ -50,11 +50,21 @@ class AdviceRateTableViewCell: UITableViewCell {
 		return button
 	}()
 	
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
+		setupView()
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+	
 	private func setupView() {
 		likeButton.addTarget(self, action: #selector(positiveFeedbackAction(_:)), for: .touchUpInside)
 		neutralButton.addTarget(self, action: #selector(normalFeedbackAction(_:)), for: .touchUpInside)
 		dislikeButton.addTarget(self, action: #selector(badFeedbackAction(_:)), for: .touchUpInside)
 		
+		contentView.backgroundColor = AppColors.mainBackground
 		let frameView = UIView()
 		frameView.backgroundColor = .white
 		frameView.layer.cornerRadius = 8
@@ -80,6 +90,7 @@ class AdviceRateTableViewCell: UITableViewCell {
 		stackView.addArrangedSubview(dislikeButton)
 		frameView.addSubview(stackView)
 		stackView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0), excludingEdge: .top)
+		stackView.autoPinEdge(.top, to: .bottom, of: titleView, withOffset: 16)
 	}
 	
 	@objc private func positiveFeedbackAction(_ sender: UIButton) {
