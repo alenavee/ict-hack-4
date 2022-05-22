@@ -8,7 +8,8 @@
 import UIKit
 
 class NewDiaryEntryViewController: UIViewController {
-	var data: [Any] = [Note(text: "", isEditable: true), PsychologicalAdvice(text: "fdjvnkdf"), AdviceRate(rate: .notRated), helpСenterRecommendation(), PositiveAdvice(text: "", date: Date())]
+//	var data: [Any] = [Note(text: "", isEditable: true), PsychologicalAdvice(text: "fdjvnkdf"), AdviceRate(rate: .notRated), helpСenterRecommendation(), PositiveAdvice(text: "", date: Date())]
+	var data: [Any] = [Note(text: "", isEditable: true)]
 	
 	private let table = UITableView()
 	
@@ -45,7 +46,24 @@ class NewDiaryEntryViewController: UIViewController {
 	}
 	
 	private func addNewContentBlock(for textTopics: [NoteTopic]) {
-		
+		let maxValue = textTopics.max(by: { $0.value > $1.value })
+		guard let maxValue = maxValue else {
+			return
+		}
+		switch maxValue.topic {
+		case .suicide:
+			data.append(PsychologicalAdvice(text: "Ну типа тут совет для суицидальных"))
+			data.append(helpСenterRecommendation())
+		case .anxiety:
+			data.append(PsychologicalAdvice(text: "Ну типа тут совет для тревожных"))
+			data.append(AdviceRate(rate: .notRated))
+		case .depression:
+			data.append(PsychologicalAdvice(text: "Ну типа тут совет для депрессивных"))
+			data.append(AdviceRate(rate: .notRated))
+		case .positive:
+			data.append(PositiveAdvice(text: "", date: Date()))
+		}
+		table.reloadData()
 	}
 	
 	private func updateTable() {
