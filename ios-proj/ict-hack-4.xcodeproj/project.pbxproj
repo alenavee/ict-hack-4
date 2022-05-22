@@ -34,6 +34,7 @@
 		A683550028383A6E00C31392 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354FF28383A6E00C31392 /* NumberPadView.swift */; };
 		A683550228383CF300C31392 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A683550128383CF300C31392 /* UIButton+Extension.swift */; };
 		A6B1697E2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */; };
+		A6B169802839C05100E4FDFA /* PositiveAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1697F2839C05100E4FDFA /* PositiveAdviceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		A68354FF28383A6E00C31392 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
 		A683550128383CF300C31392 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelpСenterCallTableViewCell.swift"; sourceTree = "<group>"; };
+		A6B1697F2839C05100E4FDFA /* PositiveAdviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveAdviceTableViewCell.swift; sourceTree = "<group>"; };
 		A990A7DB93C74C210AF9A76B /* Pods-ict-hack-4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack-4.release.xcconfig"; path = "Target Support Files/Pods-ict-hack-4/Pods-ict-hack-4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A61F477228390E1D00E5E74E /* NewDiaryEntryViewController.swift */,
+				A6B1697F2839C05100E4FDFA /* PositiveAdviceTableViewCell.swift */,
 				A6B1697D2839B5E500E4FDFA /* HelpСenterCallTableViewCell.swift */,
 				A61F4778283912C200E5E74E /* NewNoteTableViewCell.swift */,
 				A61F477C2839412E00E5E74E /* AdviceTableViewCell.swift */,
@@ -358,6 +361,7 @@
 				A68354FC283836C600C31392 /* EnterPasswordViewController.swift in Sources */,
 				A61F47862839668D00E5E74E /* Utils.swift in Sources */,
 				A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */,
+				A6B169802839C05100E4FDFA /* PositiveAdviceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

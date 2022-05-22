@@ -35,8 +35,15 @@ class NewDiaryEntryViewController: UIViewController {
 		table.dataSource = self
 		table.delaysContentTouches = false
 		table.register(NewNoteTableViewCell.self, forCellReuseIdentifier: String(describing: NewNoteTableViewCell.self))
+		table.register(AdviceTableViewCell.self, forCellReuseIdentifier: String(describing: AdviceTableViewCell.self))
 		table.register(AdviceRateTableViewCell.self, forCellReuseIdentifier: String(describing: AdviceRateTableViewCell.self))
+		table.register(HelpСenterCallTableViewCell.self, forCellReuseIdentifier: String(describing: HelpСenterCallTableViewCell.self))
 	}
+	
+	private func addNewContentBlock(for textTopics: [NoteTopic]) {
+		
+	}
+	
 	private func updateTable() {
 		DispatchQueue.main.async { [weak table] in
 			table?.beginUpdates()
@@ -77,7 +84,11 @@ extension NewDiaryEntryViewController: UITableViewDataSource {
 			cell.configure(with: dataModel)
 			return cell
 			
-		} else if let dataModel = rawData as? helpСenterRecommendation {
+		} else if rawData is helpСenterRecommendation {
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HelpСenterCallTableViewCell.self), for: indexPath) as? HelpСenterCallTableViewCell else {
+				return UITableViewCell()
+			}
+			return cell
 			
 		} else if let dataModel = rawData as? PositiveAdvice {
 			
