@@ -9,6 +9,9 @@ import UIKit
 
 class NewDiaryEntryViewController: UIViewController {
 	let table = UITableView()
+	private let table = UITableView()
+	
+	private let predictionModel = PredictionModel()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -25,7 +28,7 @@ class NewDiaryEntryViewController: UIViewController {
 		
 		view.addSubview(table)
 		table.autoPinEdgesToSuperviewSafeArea(with: .zero, excludingEdge: .bottom)
-		table.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.bottomAnchor).isActive = true
+		table.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor).isActive = true
 	}
 	
 	private func registers() {
@@ -33,6 +36,12 @@ class NewDiaryEntryViewController: UIViewController {
 		table.delaysContentTouches = false
 		table.register(NewNoteTableViewCell.self, forCellReuseIdentifier: String(describing: NewNoteTableViewCell.self))
 		table.register(AdviceRateTableViewCell.self, forCellReuseIdentifier: String(describing: AdviceRateTableViewCell.self))
+	}
+	private func updateTable() {
+		DispatchQueue.main.async { [weak table] in
+			table?.beginUpdates()
+			table?.endUpdates()
+		}
 	}
 }
 
@@ -80,10 +89,30 @@ extension NewDiaryEntryViewController: UITableViewDataSource {
 }
 
 extension NewDiaryEntryViewController: NewNoteTableViewCellDelegate {
+	func addNote(with text: String, _ callback: @escaping () -> ()) {
+		
+		predictionModel.predict(for: text) { [weak self] textTopics in
+			callback()
+			guard let self = self else {
+				return
+			}
+			if var note = self.data[0] as? Note {
+				note.text = text
+				note.isEditable = false
+				self.data[0] = note
+				self.table.reloadRows(at: [IndexPath(item: 0, section: 0)], with: .none)
+			}
+			self.addNewContentBlock(for: textTopics)
+			self.updateTable()
+			print(textTopics)
+		}
+	}
+	
 	func textChanged() {
-		DispatchQueue.main.async { [weak table] in
-			table?.beginUpdates()
-			table?.endUpdates()
+		updateTable()
+	}
+}
+
 extension NewDiaryEntryViewController: AdviceRateTableViewCellDelegate {
 	func adviceFeedback(with rate: Rate) {
 		for (index, dataModel) in data.enumerated() {
