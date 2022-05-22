@@ -68,7 +68,9 @@ class BertTokenizer {
 	}
 	
 	func tokenizeText(_ text: String) -> ([Int], [Int]) {
-		let tokens = tokenizeToIds(text: text)
+		var tokens = tokenizeToIds(text: text)
+		tokens.insert(tokenToId(token: "[CLS]"), at: 0)
+		tokens.append(tokenToId(token: "[SEP]"))
 		var ids = Array(repeating: 0, count: 512)
 		var mask = Array(repeating: 0, count: 512)
 		for (index, token) in tokens.enumerated() {

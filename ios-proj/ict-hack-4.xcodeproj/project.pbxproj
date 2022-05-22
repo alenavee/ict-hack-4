@@ -23,7 +23,6 @@
 		A61F47862839668D00E5E74E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F47852839668D00E5E74E /* Utils.swift */; };
 		A61F478828396DE500E5E74E /* PredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F478728396DE500E5E74E /* PredictionModel.swift */; };
 		A61F478D2839701E00E5E74E /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = A61F478C2839701E00E5E74E /* TorchModule.mm */; };
-		A61F47902839984800E5E74E /* model-opt.ptl in Resources */ = {isa = PBXBuildFile; fileRef = A61F478F2839984800E5E74E /* model-opt.ptl */; };
 		A68354E428381AAF00C31392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E328381AAF00C31392 /* AppDelegate.swift */; };
 		A68354E628381AAF00C31392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E528381AAF00C31392 /* SceneDelegate.swift */; };
 		A68354E828381AAF00C31392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68354E728381AAF00C31392 /* ViewController.swift */; };
@@ -57,6 +56,7 @@
 		A6B16AAB2839E27A00E4FDFA /* CircleColorSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A7F2839E27900E4FDFA /* CircleColorSparkViewFactory.swift */; };
 		A6B16AAC2839E27A00E4FDFA /* CircleColorSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */; };
 		A6B16AAD2839E27A00E4FDFA /* ImageSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B16A812839E27900E4FDFA /* ImageSparkView.swift */; };
+		A6B16AAF283A31A200E4FDFA /* model-opt.ptl in Resources */ = {isa = PBXBuildFile; fileRef = A6B16AAE283A31A200E4FDFA /* model-opt.ptl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +79,6 @@
 		A61F478A2839701100E5E74E /* TorchModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
 		A61F478B2839701E00E5E74E /* ict-hack-4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ict-hack-4-Bridging-Header.h"; sourceTree = "<group>"; };
 		A61F478C2839701E00E5E74E /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
-		A61F478F2839984800E5E74E /* model-opt.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model-opt.ptl"; sourceTree = "<group>"; };
 		A68354E028381AAF00C31392 /* ict-hack-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ict-hack-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68354E328381AAF00C31392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68354E528381AAF00C31392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		A6B16A7F2839E27900E4FDFA /* CircleColorSparkViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleColorSparkViewFactory.swift; sourceTree = "<group>"; };
 		A6B16A802839E27900E4FDFA /* CircleColorSparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleColorSparkView.swift; sourceTree = "<group>"; };
 		A6B16A812839E27900E4FDFA /* ImageSparkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSparkView.swift; sourceTree = "<group>"; };
+		A6B16AAE283A31A200E4FDFA /* model-opt.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model-opt.ptl"; sourceTree = "<group>"; };
 		A990A7DB93C74C210AF9A76B /* Pods-ict-hack-4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack-4.release.xcconfig"; path = "Target Support Files/Pods-ict-hack-4/Pods-ict-hack-4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,7 +248,7 @@
 			children = (
 				A61F47892839700700E5E74E /* TorchBridge */,
 				A61F47802839622C00E5E74E /* vocab.txt */,
-				A61F478F2839984800E5E74E /* model-opt.ptl */,
+				A6B16AAE283A31A200E4FDFA /* model-opt.ptl */,
 				A61F47832839663A00E5E74E /* Tokenizer.swift */,
 				A61F47852839668D00E5E74E /* Utils.swift */,
 				A61F478728396DE500E5E74E /* PredictionModel.swift */,
@@ -397,7 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61F47902839984800E5E74E /* model-opt.ptl in Resources */,
+				A6B16AAF283A31A200E4FDFA /* model-opt.ptl in Resources */,
 				A61F47812839622C00E5E74E /* vocab.txt in Resources */,
 				A68354F028381AAF00C31392 /* LaunchScreen.storyboard in Resources */,
 				A68354ED28381AAF00C31392 /* Assets.xcassets in Resources */,
