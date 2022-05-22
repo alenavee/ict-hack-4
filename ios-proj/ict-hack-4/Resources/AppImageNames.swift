@@ -17,4 +17,12 @@ struct AppImageNames {
 	static let history = "history"
 	
 	static let create = "create"
+	
+	static let phone = "phone"
+	
+	static let like = "like"
+	
+	static let dislike = "dislike"
+	
+	static let neutral = "neutral"
 }

@@ -14,6 +14,8 @@ struct AppColors {
 	
 	static let textPrimary = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1)
 	
+	static let textSecondary = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)
+	
 	static let textButtonPrimary = UIColor.white
 	
 	static let mainBackground = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
