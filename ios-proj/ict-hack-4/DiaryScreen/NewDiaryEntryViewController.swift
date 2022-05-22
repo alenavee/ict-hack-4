@@ -34,6 +34,8 @@ class NewDiaryEntryViewController: UIViewController {
 		view.addSubview(table)
 		table.autoPinEdgesToSuperviewSafeArea(with: .zero, excludingEdge: .bottom)
 		table.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor).isActive = true
+		
+		navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Новая запись", style: .plain, target: self, action: #selector(newRecord))
 	}
 	
 	private func registers() {
@@ -88,6 +90,11 @@ class NewDiaryEntryViewController: UIViewController {
 	
 	private func makeFireworks() {
 		fireworksController.addFirework(sparks: 40, above: table, sparkSize: CGSize(width: 50, height: 50), scale: 300, offsetY: -table.frame.height, animationDuration: 3)
+	}
+	
+	@objc private func newRecord() {
+		data = [Content.note(Note(text: "", isEditable: true))]
+		reloadData()
 	}
 }
 
